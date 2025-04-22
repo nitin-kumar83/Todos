@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <h1>todos</h1>
+    <header style="position: relative;">
+        <input type="text" placeholder="What needs to be done?" class="task" id="myInput" autofocus/>
+        <div class="arrow" id="toggle-arrow"></div>
+    </header>        
+    
+    <div class="main">
+    <main>
+        <ul class="task-list" id="taskList"></ul>
+    </main>
+
+    <footer>
+        <div id="task-count">0 items left</div>
+        <div class="combined-buttons">
+        <div id="all-task" class="button">All</div>
+        <div id="active-task" class="button">Active</div>
+        <div id="completed-task" class="button">Completed</div>
+        </div>
+        <div id="clear-completed" class="button">Clear Completed</div>
+    </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
